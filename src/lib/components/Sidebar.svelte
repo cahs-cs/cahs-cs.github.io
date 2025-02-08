@@ -13,7 +13,7 @@
 </script>
 
 <!-- Mobile header with hamburger -->
-<div class="md:hidden fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex items-center">
+<div class="md:hidden fixed top-0 left-0 w-full bg-[#44475a] text-gray-100 p-4 z-50 flex items-center">
   <button
     on:click={toggleMobile}
     aria-label="Toggle sidebar"
@@ -21,7 +21,7 @@
   >
     ☰
   </button>
-  <span class="font-mono text-lg">Mr. Mankin's Classroom</span>
+  <span class="text-lg">Mr. Mankin's Classroom</span>
 </div>
 
 <!-- Mobile sidebar (overlay) -->
@@ -33,15 +33,15 @@
   ></div>
 {/if}
 <div
-  class="fixed top-0 left-0 h-full w-64 bg-gray-100 font-mono overflow-y-auto z-50 transition-transform transform md:hidden"
+  class="fixed top-0 left-0 h-full w-64 bg-[#44475a] text-gray-100 overflow-y-auto z-50 transition-transform transform md:hidden"
   style:transform={showMobile ? 'translateX(0)' : 'translateX(-100%)'}
 >
-  <div class="p-4 border-b border-gray-300 flex justify-between items-center">
+  <div class="p-4 border-b border-gray-600 flex justify-between items-center">
     <span class="font-bold">Mr. Mankin's Classroom</span>
     <button
       on:click={toggleMobile}
       aria-label="Close sidebar"
-      class="px-2 py-1 text-gray-800 focus:outline-none"
+      class="px-2 py-1 text-gray-100 focus:outline-none"
     >
       ✕
     </button>
@@ -54,14 +54,14 @@
 </div>
 
 <!-- Desktop sidebar -->
-<div class="hidden md:block fixed top-0 left-0 h-full w-64 bg-gray-100 font-mono overflow-y-auto p-4 transition-transform duration-300"
+<div class="hidden md:block fixed top-0 left-0 h-full w-96 bg-[#44475a] text-gray-100 overflow-y-auto p-4 transition-transform duration-300 sidebar-desktop"
   style:transform={showDesktop ? 'translateX(0)' : 'translateX(-100%)'}>
   <div class="flex justify-between items-center mb-4">
     <span class="font-bold">Mr. Mankin's Classroom</span>
     <button
       on:click={toggleDesktop}
       aria-label="Close sidebar"
-      class="text-gray-800 focus:outline-none"
+      class="text-gray-100 focus:outline-none"
     >
       ✕
     </button>

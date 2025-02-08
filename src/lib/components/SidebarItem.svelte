@@ -39,12 +39,12 @@
     role="button"
     tabindex="0"
     aria-expanded={item.children ? expanded : undefined}
-    class="flex items-center bg-gray-200 p-4 rounded-lg cursor-pointer"
+    class="flex items-center bg-[#333645] p-4 rounded-lg cursor-pointer"
     on:click={handleClick}
     on:keydown={handleKeydown}
   >
     {#if item.children && item.children.length}
-      <span class="mr-2 text-gray-800">
+      <span class="mr-2 text-gray-100">
         {#if expanded}
           -
         {:else}
@@ -55,7 +55,7 @@
     <a 
       href={item.route} 
       on:click|stopPropagation 
-      class="flex-grow hover:underline"
+      class="flex-grow text-gray-100 hover:underline"
     >
       <span class="font-semibold">{item.title}</span>
     </a>

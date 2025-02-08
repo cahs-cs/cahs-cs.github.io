@@ -1,5 +1,5 @@
 ---
-title: Unit Outline
+title: Gallery
 author: Hayden Mankin
 ---
 

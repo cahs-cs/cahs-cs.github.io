@@ -1,5 +1,5 @@
 ---
-title: Game Design
+title: Games
 author: Hayden Mankin
 ---
 
